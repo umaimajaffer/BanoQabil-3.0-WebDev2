@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Grocery Bill Calculator</title>
+</head>
+<body class="bg-gray-100">
+<div class="flex flex-col items-center mt-12 h-screen">
+  <div class="bg-white shadow-md rounded-lg p-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">UJ Grocery Calculator</h1>
+    <div class="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">
+      <div>
+        <label for="quinoaQty" class="block text-sm font-medium leading-6 text-gray-900">Quinoa Quantity</label>
+        <div class="relative mt-2 rounded-md shadow-sm">
+          <input type="number" name="quinoaQty" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0" />
+        </div>
+      </div>
+      <div>
+        <label for="lentilsQty" class="block text-sm font-medium leading-6 text-gray-900">Lentils Quantity</label>
+        <div class="relative mt-2 rounded-md shadow-sm">
+          <input type="number" name="lentilsQty" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0" />
+        </div>
+      </div>
+      <div>
+        <label for="organicChickenQty" class="block text-sm font-medium leading-6 text-gray-900">Organic Chicken Quantity</label>
+        <div class="relative mt-2 rounded-md shadow-sm">
+          <input type="number" name="organicChickenQty" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0" />
+        </div>
+      </div>
+      <div>
+        <label for="almondMilkQty" class="block text-sm font-medium leading-6 text-gray-900">Almond Milk Quantity</label>
+        <div class="relative mt-2 rounded-md shadow-sm">
+          <input type="number" name="almondMilkQty" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0" />
+        </div>
+      </div>
+      <div>
+        <label for="avocadoQty" class="block text-sm font-medium leading-6 text-gray-900">Avocado Quantity</label>
+        <div class="relative mt-2 rounded-md shadow-sm">
+          <input type="number" name="avocadoQty" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0" />
+        </div>
+      </div>
+    </div>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Calculate</button>
+  </div>
+  <div class="mt-6 p-6 bg-white shadow-md rounded-lg">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">PRICE CARD:</h2>
+    <p>Quinoa Price: <b>$5</b></p>
+    <p>Lentils Price: <b>$4</b></p>
+    <p>Organic Chicken Price: <b>$10</b></p>
+    <p>Almond Milk Price: <b>$6</b></p>
+    <p>Avocado Price: <b>$3</b></p>
+    <p class="mt-4">Total Price: <b id="total" class="text-xl text-green-700"></b></p>
+  </div>
+</div>
+<script src="GroceryBill.js"></script>
+</body>
+</html>
