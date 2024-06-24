@@ -1,5 +1,4 @@
-//QUESTION: 02
-
+//What will be the output in variables a, b & result after execution of the following script: var a = 2, b = 1; var result = --a - --b + ++b + b-
 let a = 2;
 let b = 1;
 let stage1 = --a;
